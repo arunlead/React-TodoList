@@ -1,0 +1,68 @@
+.todo-container {
+  width: 400px;
+  margin: 20px auto;
+}
+
+input, textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+button {
+  margin-right: 10px;
+  padding: 5px 10px;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f4f4f4;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  position: relative;
+  box-sizing: border-box; /* Ensures padding is included in the width */
+  overflow: hidden; /* Prevents overflowing content */
+  word-wrap: break-word; /* Ensures long words wrap and don’t overflow */
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item h3, .todo-item p {
+  margin: 0 0 10px 0;
+}
+
+.todo-item p {
+  word-wrap: break-word;
+  white-space: pre-wrap; /* Allows line breaks in the text */
+}
+
+.completed {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.edit-todo {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Align the buttons to the top of the box */
+.todo-actions {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 10px;
+}
+
+.todo-actions button {
+  margin-right: 10px;
+}
